@@ -1,0 +1,32 @@
+.nav {
+    padding-top: 40px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .links {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--grey);
+    font-weight: bold;
+    margin-left: 75px;
+    font-size: 1.04rem;
+}
+
+.nav ul li:first-of-type a {
+    color: var(--purple);
+}
+
+.nav img {
+    width: 130px;
+    cursor: pointer;
+}
