@@ -4,6 +4,10 @@
   --backgroundWhite: #FEFEFE;
   --darkGrey: #263238;
   --lightGrey: #C9C9C9;
+
+  --blue: #2F6DB5;
+  --mildGrey: #868492;
+  /* --blue: #295e9b; */
 }
 
 * {
@@ -67,6 +71,7 @@ section {
 .button {
   display: inline-block;
   width: 180px;
+  height: 44px;
   text-align: center;
   color: var(--backgroundWhite);
   font-weight: bold;
@@ -83,4 +88,16 @@ section {
 
 .buttonPrimary:hover {
   background-color: #5437bb;
+}
+
+.buttonBlue {
+  background-color: var(--blue);
+}
+
+.buttonBlue:hover {
+  background-color: #25568f;
+}
+
+.buttonMildGrey {
+  background-color: var(--mildGrey);
 }

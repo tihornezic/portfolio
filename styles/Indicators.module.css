@@ -27,8 +27,6 @@
     height: 18px;
 }
 
-/* .indicators div:first-of-type {
-    background-color: var(--purple);
-    width: 18px;
-    height: 18px;
-} */
+.indicators div.projectOneActive {
+    background-color: var(--blue);
+}

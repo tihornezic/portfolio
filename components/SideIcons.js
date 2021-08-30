@@ -10,8 +10,7 @@ import sideIconsStyles from '../styles/SideIcons.module.css'
 // import { saveAs } from 'file-saver'
 import FileSaver from 'file-saver'
 
-const SideIcons = () => {
-
+const SideIcons = ({projectOneIsVisible}) => {
     const saveFile = () => {
         FileSaver.saveAs(
             "/resource/pdf.pdf",
@@ -22,7 +21,7 @@ const SideIcons = () => {
 
     return (
         <div className={sideIconsStyles.sideIcons}>
-            <div className={sideIconsStyles.sideIcon}>
+            <div className={projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` : sideIconsStyles.sideIcon}>
                 <Link href='https://www.linkedin.com/in/tihor-nezi%C4%87-7666221a5/'>
                     <a target='_blank'>
                         <Image src={linkedin} alt='linkedin' width={20} />
@@ -30,7 +29,7 @@ const SideIcons = () => {
                 </Link>
             </div>
 
-            <div className={sideIconsStyles.sideIcon}>
+            <div className={projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` : sideIconsStyles.sideIcon}>
                 <Link href='https://github.com/tihornezic'>
                     <a target='_blank'>
                         <Image src={github} alt='github' />
@@ -38,7 +37,7 @@ const SideIcons = () => {
                 </Link>
             </div>
 
-            <div className={sideIconsStyles.sideIcon}>
+            <div className={projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` : sideIconsStyles.sideIcon}>
                 <Link href='#'>
                     <Image src={mail} alt='mail' />
                 </Link>
@@ -47,7 +46,7 @@ const SideIcons = () => {
 
             {/* <a href={require("../path/to/file.pdf")} download="myFile">Download file</a> */}
 
-            <div className={sideIconsStyles.sideIcon}>
+            <div className={projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` : sideIconsStyles.sideIcon}>
                 {/* <Link href={require('../public/pdf.pdf')} download='pdf'> */}
                 {/* <Link href='#' onClick={saveFile}> */}
                 {/* <button onClick={saveFile}> */}
