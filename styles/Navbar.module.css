@@ -1,8 +1,12 @@
 .nav {
+    position: fixed;
     padding-top: 40px;
+    width: 1450px;
+    z-index: 50;
 }
 
 .nav ul {
+    width: 100%;
     list-style: none;
     display: flex;
     align-items: center;
@@ -22,9 +26,9 @@
     font-size: 1.04rem;
 }
 
-.nav ul li:first-of-type a {
+/* .nav ul li:first-of-type a {
     color: var(--purple);
-}
+} */
 
 .nav img {
     width: 130px;

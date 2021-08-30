@@ -1,0 +1,36 @@
+.sideIcons {
+    position: fixed;
+    top: 45%;
+    left: -22px;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 50px;
+}
+
+.sideIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple);
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.sideIcon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideIcon:hover {
+    transform: translateX(50px)
+}
+
+.sideIcon img {
+    width: 26px;
+}

@@ -1,10 +1,23 @@
 .home {
-    padding-top: 285px;
+    padding-top: 350px;
 }
+
+.homeRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    height: fit-content;
+}
+
+/* .right {
+    margin-bottom: -60px;
+} */
 
 .home h1 {
     color: var(--grey);
-    font-size: 3.65rem;
+    font-size: 3.85rem;
 }
 
 .home h1 span {
@@ -23,10 +36,20 @@
 }
 
 .imageWrapper {
-    position: absolute;
+    /* position: absolute; */
     /* position: fixed; */
-    right: 50px;
-    bottom: 20px;
+    /* right: 50px;
+    bottom: 20px; */
+
+    width: 690px;
+    margin-right: -150px;
+    /* margin-bottom: -160px; */
+}
+
+@media (max-width: 1690px) {
+    .imageWrapper {
+        width: 200px;
+    }
 }
 
 /* .home img {
@@ -37,7 +60,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    /* width: 50%; */
+    width: 460px;
     margin-top: 60px;
 }
 

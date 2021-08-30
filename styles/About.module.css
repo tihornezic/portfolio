@@ -1,0 +1,46 @@
+.about {
+    /* position: absolute; */
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    /* width: 39%; */
+    /* height: 50%; */
+
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+}
+
+.about h1 {
+    color: var(--grey);
+    font-size: 3.45rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about .wrapper p {
+    font-size: 1.3rem;
+    margin: 8px 0;
+}
+
+.about p span {
+    color: var(--purple);
+}
+
+.about .button {
+    align-self: start;
+    margin-top: 30px;
+}
+
+.about .button p {
+    font-size: 1rem;
+}

@@ -3,6 +3,7 @@
   --purple: #7550FD;
   --backgroundWhite: #FEFEFE;
   --darkGrey: #263238;
+  --lightGrey: #C9C9C9;
 }
 
 * {
@@ -13,6 +14,8 @@
 
 html, body {
   font-family: 'Nexa', serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,8 +23,45 @@ body {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1450px;
   margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header2 {
+  position: fixed;
+  top: 25px;
+  left: 0;
+}
+
+.fullWrapper {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  overflow-y: hidden;
+  /* width: 100%; */
+
+  scroll-snap-align: start;
+}
+
+.two {
+  /* background-color: coral; */
+}
+
+@media (max-width: 1690px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .button {
@@ -30,6 +70,7 @@ body {
   text-align: center;
   color: var(--backgroundWhite);
   font-weight: bold;
+  font-size: 1rem;
   padding: 12px 0;
   border-radius: 20px;
   cursor: pointer;
