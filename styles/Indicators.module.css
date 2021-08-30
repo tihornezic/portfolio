@@ -30,3 +30,11 @@
 .indicators div.projectOneActive {
     background-color: var(--blue);
 }
+
+.indicators div.projectTwoActive {
+    background-color: var(--pink);
+}
+
+.indicators div.projectThreeActive {
+    background-color: var(--green);
+}

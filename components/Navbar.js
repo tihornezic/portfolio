@@ -5,7 +5,7 @@ import navbarStyles from '../styles/Navbar.module.css'
 import {useRouter} from 'next/router'
 
 
-const Navbar = ({homeIsVisible, aboutIsVisible, projectOneIsVisible}) => {
+const Navbar = ({homeIsVisible, aboutIsVisible, projectOneIsVisible, projectTwoIsVisible, projectThreeIsVisible}) => {
     const router = useRouter()
 
     console.log(router.asPath)
@@ -38,11 +38,11 @@ const Navbar = ({homeIsVisible, aboutIsVisible, projectOneIsVisible}) => {
                         </li>
                         <li>
                             <Link href='#projectOne'>
-                                <a style={{color: projectOneIsVisible ? '#2F6DB5' : '#373737'}}>Projects</a>
+                                <a style={{color: projectOneIsVisible ? '#2F6DB5' : projectTwoIsVisible ? '#b460a8' : projectThreeIsVisible ? '#366961' : '#373737'}}>Projects</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href='#'>Contact me</Link>
+                            <Link href='#projectThree'>Contact me</Link>
                         </li>
                     </div>
                 </ul>

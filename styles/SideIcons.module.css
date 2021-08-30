@@ -25,6 +25,14 @@
     background-color: var(--blue);
 }
 
+.sideIcon.projectTwo {
+    background-color: var(--pink);
+}
+
+.sideIcon.projectThree {
+    background-color: var(--green);
+}
+
 .sideIcon a {
     display: flex;
     align-items: center;

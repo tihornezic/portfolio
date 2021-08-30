@@ -1,4 +1,4 @@
-.projectOne {
+.projectThree {
     /* margin-bottom: 75px; */
     display: flex;
     flex-direction: column;
@@ -8,8 +8,8 @@
     /* margin-top: -25px; */
 }
 
-.projectOne h1 {
-    color: var(--blue);
+.projectThree h1 {
+    color: var(--green);
     font-size: 3.15rem;
     margin-bottom: 45px;
     text-align: center;
@@ -38,7 +38,7 @@
 
 .left p a {
     text-decoration: none;
-    color: var(--blue);
+    color: var(--green);
 }
 
 .left .iconsRow {

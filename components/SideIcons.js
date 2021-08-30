@@ -10,7 +10,7 @@ import sideIconsStyles from '../styles/SideIcons.module.css'
 // import { saveAs } from 'file-saver'
 import FileSaver from 'file-saver'
 
-const SideIcons = ({projectOneIsVisible}) => {
+const SideIcons = ({projectOneIsVisible, projectTwoIsVisible, projectThreeIsVisible}) => {
     const saveFile = () => {
         FileSaver.saveAs(
             "/resource/pdf.pdf",
@@ -21,7 +21,13 @@ const SideIcons = ({projectOneIsVisible}) => {
 
     return (
         <div className={sideIconsStyles.sideIcons}>
-            <div className={projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` : sideIconsStyles.sideIcon}>
+            <div
+                className=
+                {projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` :
+                    projectTwoIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectTwo}` :
+                        projectThreeIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectThree}` :
+                            sideIconsStyles.sideIcon}
+            >
                 <Link href='https://www.linkedin.com/in/tihor-nezi%C4%87-7666221a5/'>
                     <a target='_blank'>
                         <Image src={linkedin} alt='linkedin' width={20} />
@@ -29,7 +35,13 @@ const SideIcons = ({projectOneIsVisible}) => {
                 </Link>
             </div>
 
-            <div className={projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` : sideIconsStyles.sideIcon}>
+            <div
+                className=
+                {projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` :
+                    projectTwoIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectTwo}` :
+                        projectThreeIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectThree}` :
+                            sideIconsStyles.sideIcon}
+            >
                 <Link href='https://github.com/tihornezic'>
                     <a target='_blank'>
                         <Image src={github} alt='github' />
@@ -37,7 +49,13 @@ const SideIcons = ({projectOneIsVisible}) => {
                 </Link>
             </div>
 
-            <div className={projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` : sideIconsStyles.sideIcon}>
+            <div
+                className=
+                {projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` :
+                    projectTwoIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectTwo}` :
+                        projectThreeIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectThree}` :
+                            sideIconsStyles.sideIcon}
+            >
                 <Link href='#'>
                     <Image src={mail} alt='mail' />
                 </Link>
@@ -46,7 +64,13 @@ const SideIcons = ({projectOneIsVisible}) => {
 
             {/* <a href={require("../path/to/file.pdf")} download="myFile">Download file</a> */}
 
-            <div className={projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` : sideIconsStyles.sideIcon}>
+            <div
+                className=
+                {projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` :
+                    projectTwoIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectTwo}` :
+                        projectThreeIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectThree}` :
+                            sideIconsStyles.sideIcon}
+            >
                 {/* <Link href={require('../public/pdf.pdf')} download='pdf'> */}
                 {/* <Link href='#' onClick={saveFile}> */}
                 {/* <button onClick={saveFile}> */}
@@ -54,7 +78,7 @@ const SideIcons = ({projectOneIsVisible}) => {
                 {/* </button> */}
                 {/* </Link> */}
             </div>
-        </div>
+        </div >
     )
 }
 

@@ -33,13 +33,25 @@ const ProjectOne = () => {
 
                     <div className={projectOneStyles.iconsRow}>
                         <div className={projectOneStyles.iconItem}>
-                            <Image src={react} alt='react' />
+                            <Link href='https://reactjs.org/'>
+                                <a target='_blank'>
+                                    <Image src={react} alt='react' />
+                                </a>
+                            </Link>
                         </div>
                         <div className={projectOneStyles.iconItem}>
-                            <Image src={sass} alt='sass' />
+                            <Link href='https://sass-lang.com/'>
+                                <a target='_blank'>
+                                    <Image src={sass} alt='sass' />
+                                </a>
+                            </Link>
                         </div>
                         <div className={projectOneStyles.iconItem}>
-                            <Image src={contextapi} alt='contextapi' />
+                            <Link href='https://reactjs.org/docs/context.html'>
+                                <a target='_blank'>
+                                    <Image src={contextapi} alt='contextapi' />
+                                </a>
+                            </Link>
                         </div>
                     </div>
 

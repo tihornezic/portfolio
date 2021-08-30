@@ -7,7 +7,12 @@
 
   --blue: #2F6DB5;
   --mildGrey: #868492;
-  /* --blue: #295e9b; */
+
+  --pink: #b460a8;
+  --strongGrey: #263140;
+
+  --green: #366961;
+  --orange: #C57B57;
 }
 
 * {
@@ -54,12 +59,7 @@ section {
   height: 100vh;
   overflow-y: hidden;
   /* width: 100%; */
-
   scroll-snap-align: start;
-}
-
-.two {
-  /* background-color: coral; */
 }
 
 @media (max-width: 1690px) {
@@ -100,4 +100,40 @@ section {
 
 .buttonMildGrey {
   background-color: var(--mildGrey);
+}
+
+.buttonMildGrey:hover {
+  background-color: #6c6a77;
+}
+
+.buttonPink {
+  background-color: var(--pink);
+}
+
+.buttonPink:hover {
+  background-color: #a15696;
+}
+
+.buttonStrongGrey {
+  background-color: var(--strongGrey);
+}
+
+.buttonStrongGrey:hover {
+  background-color: #39495f;
+}
+
+.buttonGreen {
+  background-color: var(--green);
+}
+
+.buttonGreen:hover {
+  background-color: #284e49;
+}
+
+.buttonOrange {
+  background-color: var(--orange);
+}
+
+.buttonOrange:hover {
+  background-color: #b96a42;
 }
