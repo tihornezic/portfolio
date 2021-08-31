@@ -1,9 +1,17 @@
 import Link from 'next/link'
 import aboutStyles from '../styles/About.module.css'
+import FileSaver from 'file-saver'
 
 const About = () => {
-    return (
+    const saveFile = () => {
+        FileSaver.saveAs(
+            "/resource/pdf.pdf",
+            // process.env.REACT_APP_CLIENT_URL + "/documents/pdf.pdf",
+            "CV-Tihor-Nezić.pdf"
+        )
+    }
 
+    return (
         <div id='about' className={aboutStyles.about}>
             <div className={aboutStyles.wrapper}>
                 <h1>About</h1>
@@ -27,7 +35,7 @@ const About = () => {
 
                 <div className={aboutStyles.button}>
                     <Link href='#'>
-                        <p className='button buttonPrimary'>Download CV</p>
+                        <p className='button buttonPrimary' onClick={saveFile}>Download CV</p>
                     </Link>
                 </div>
             </div>

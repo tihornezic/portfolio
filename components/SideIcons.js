@@ -12,7 +12,7 @@ const SideIcons = ({projectOneIsVisible, projectTwoIsVisible, projectThreeIsVisi
         FileSaver.saveAs(
             "/resource/pdf.pdf",
             // process.env.REACT_APP_CLIENT_URL + "/documents/pdf.pdf",
-            "MyCV.pdf"
+            "CV-Tihor-Nezić.pdf"
         )
     }
 
