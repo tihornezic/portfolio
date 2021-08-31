@@ -62,11 +62,15 @@ section {
   scroll-snap-align: start;
 }
 
-@media (max-width: 1690px) {
+.one {
+  position: relative;
+}
+
+/* @media (max-width: 1690px) {
   .container {
     max-width: 1200px;
   }
-}
+} */
 
 .button {
   display: inline-block;

@@ -17,7 +17,8 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: 39%;
+    /* width: 39%; */
+    width: 740px;
 }
 
 .about h1 {

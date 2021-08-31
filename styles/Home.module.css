@@ -1,5 +1,9 @@
 .home {
-    padding-top: 350px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
 }
 
 .homeRow {
@@ -7,13 +11,9 @@
     justify-content: space-between;
 }
 
-.left {
+.headings {
     height: fit-content;
 }
-
-/* .right {
-    margin-bottom: -60px;
-} */
 
 .home h1 {
     color: var(--grey);
@@ -36,31 +36,15 @@
 }
 
 .imageWrapper {
-    /* position: absolute; */
-    /* position: fixed; */
-    /* right: 50px;
-    bottom: 20px; */
-
-    width: 690px;
-    margin-right: -150px;
-    /* margin-bottom: -160px; */
+    position: absolute;
+    bottom: 25px;
+    right: 150px;
 }
-
-@media (max-width: 1690px) {
-    .imageWrapper {
-        width: 200px;
-    }
-}
-
-/* .home img {
-    width: 710px;
-} */
 
 .buttonsRow {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 50%; */
     width: 460px;
     margin-top: 60px;
 }
@@ -93,8 +77,3 @@
     width: 17px;
     height: 17px;
 }
-
-/* .socialButton img {
-    width: 17px;
-    height: 17px;
-} */
