@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Navbar from '../components/Navbar'
 import aboutStyles from '../styles/About.module.css'
 
 const About = () => {
@@ -10,18 +9,19 @@ const About = () => {
                 <h1>About</h1>
 
                 <p>Framework I use to turn ideas into real projects is <span>React.js</span>.</p>
+
                 <p>
                     With prior experience in <span>UX/UI design</span>,<br></br>
                         I pay attention to details, as well as commit to deliver all functionalities required, evolving and learning in the process.
-                    </p>
+                </p>
 
                 <p>
                     Technical skills I possess: <span>HTML5</span>, <span>CSS3</span>, <span>Sass</span>, <span>JavaScript (ES6+)</span>, <span>React.js</span>, <span>Redux</span>, <span>Firebase</span>, <span>Material-UI</span>, <span>Git</span>, <span>GitHub</span>, <span>Adobe XD</span>, and most recently <span>Next.js</span>.
-                    </p>
+                </p>
 
                 <p>
                     As I progress in my career, my plan is to work on mobile apps as well, using <span>React Native</span>.
-                    </p>
+                </p>
 
                 <p>To learn more about me, click on the button below to download my resume.</p>
 

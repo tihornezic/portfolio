@@ -1,0 +1,99 @@
+.contactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.contactMe .formWrapper {
+    width: 100%;
+}
+
+.info {
+    position: relative;
+    background-color: var(--purple);
+    color: var(--backgroundWhite);
+    border-radius: 3px;
+    padding: 15px;
+    font-size: 1.15rem;
+    margin-bottom: 23px;
+}
+
+.info svg {
+    position: absolute;
+    font-size: 1.4rem;
+    top: 9px;
+    right: 9px;
+    cursor: pointer;
+}
+
+.contactMe h1 {
+    color: var(--grey);
+    font-size: 3.15rem;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.contactMe .inputRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contactMe .input {
+    width: 100%;
+}
+
+
+.contactMe label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.15rem;
+}
+
+.contactMe input {
+    font-family: 'Nexa', serif;
+    font-size: 1.15rem;
+    /* width: 320px; */
+    /* width: fit-content; */
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--lightGrey);
+}
+
+.contactMe input:focus {
+    border: 1px solid var(--grey);
+}
+
+.contactMe .message {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contactMe .message textarea {
+    font-family: 'Nexa', serif;
+    padding: 7px;
+    font-size: 1.15rem;
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--lightGrey);
+}
+
+.contactMe .message textarea:focus {
+    border: 1px solid var(--grey);
+}
+
+.contactMe .submitButton {
+    float: right;
+}

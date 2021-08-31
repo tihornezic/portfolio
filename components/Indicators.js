@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import indicatorsStyles from '../styles/Indicators.module.css'
 
-const Indicators = ({homeIsVisible, aboutIsVisible, projectOneIsVisible, projectTwoIsVisible, projectThreeIsVisible}) => {
+const Indicators = ({homeIsVisible, aboutIsVisible, projectOneIsVisible, projectTwoIsVisible, projectThreeIsVisible, contactMeIsVisible}) => {
     return (
         <div className={indicatorsStyles.indicators}>
             <Link href='#home'>
@@ -19,7 +19,9 @@ const Indicators = ({homeIsVisible, aboutIsVisible, projectOneIsVisible, project
             <Link href='#projectThree'>
                 <div className={projectThreeIsVisible ? `${indicatorsStyles.active} ${indicatorsStyles.projectThreeActive}` : ''}></div>
             </Link>
-            <div></div>
+            <Link href='#contactMe'>
+                <div className={contactMeIsVisible ? indicatorsStyles.active : ''}></div>
+            </Link>
         </div>
     )
 }

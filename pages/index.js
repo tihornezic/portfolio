@@ -8,6 +8,7 @@ import ScrollDown from '../components/ScrollDown'
 import ProjectOne from '../components/ProjectOne'
 import ProjectTwo from '../components/ProjectTwo'
 import ProjectThree from '../components/ProjectThree'
+import ContactMe from '../components/ContactMe'
 import {useState, useEffect, useCallback, useRef, useMemo} from 'react'
 
 export default function Index() {
@@ -17,6 +18,7 @@ export default function Index() {
   const projectOneRef = useRef(null)
   const projectTwoRef = useRef(null)
   const projectThreeRef = useRef(null)
+  const contactMeRef = useRef(null)
 
   const [homeIsVisible, setHomeIsVisible] = useState(false)
   const [aboutIsVisible, setAboutIsVisible] = useState(false)
@@ -25,12 +27,13 @@ export default function Index() {
   const [projectTwoIsVisible, setProjectTwoIsVisible] = useState(false)
   const [projectThreeIsVisible, setProjectThreeIsVisible] = useState(false)
 
+  const [contactMeIsVisible, setContactMeIsVisible] = useState(false)
+
   const callbackFunction = entries => {
     // const [entry] = entries // const entry = entries[0]
     const entry = entries[0]
 
-    console.log(entry)
-
+    // console.log(entry)
     // console.log(entry.target.className)
 
     if (entry.target.className === 'one') {
@@ -52,6 +55,10 @@ export default function Index() {
     if (entry.target.className === 'five') {
       setProjectThreeIsVisible(entry.isIntersecting)
     }
+
+    if (entry.target.className === 'six') {
+      setContactMeIsVisible(entry.isIntersecting)
+    }
   }
 
   const options = useMemo(() => {
@@ -70,6 +77,7 @@ export default function Index() {
     const projectOneTarget = projectOneRef.current
     const projectTwoTarget = projectTwoRef.current
     const projectThreeTarget = projectThreeRef.current
+    const contactMeTarget = contactMeRef.current
 
     if (homeTarget) observer.observe(homeTarget)
     if (aboutTarget) observer.observe(aboutTarget)
@@ -78,6 +86,8 @@ export default function Index() {
     if (projectTwoTarget) observer.observe(projectTwoTarget)
     if (projectThreeTarget) observer.observe(projectThreeTarget)
 
+    if (contactMeTarget) observer.observe(contactMeTarget)
+
     return () => {
       if (homeTarget) observer.unobserve(homeTarget)
       if (aboutTarget) observer.unobserve(aboutTarget)
@@ -85,8 +95,10 @@ export default function Index() {
       if (projectOneTarget) observer.unobserve(projectOneTarget)
       if (projectTwoTarget) observer.unobserve(projectTwoTarget)
       if (projectThreeTarget) observer.unobserve(projectThreeTarget)
+
+      if (contactMeTarget) observer.unobserve(contactMeTarget)
     }
-  }, [homeRef, aboutRef, projectOneRef, projectTwoRef, projectThreeRef, options])
+  }, [homeRef, aboutRef, projectOneRef, projectTwoRef, projectThreeRef, contactMeRef, options])
 
   return (
     <div>
@@ -109,6 +121,7 @@ export default function Index() {
           projectOneIsVisible={projectOneIsVisible}
           projectTwoIsVisible={projectTwoIsVisible}
           projectThreeIsVisible={projectThreeIsVisible}
+          contactMeIsVisible={contactMeIsVisible}
         />
 
         <Indicators
@@ -117,6 +130,7 @@ export default function Index() {
           projectOneIsVisible={projectOneIsVisible}
           projectTwoIsVisible={projectTwoIsVisible}
           projectThreeIsVisible={projectThreeIsVisible}
+          contactMeIsVisible={contactMeIsVisible}
         />
 
         <SideIcons
@@ -147,6 +161,10 @@ export default function Index() {
 
         <section className='five' ref={projectThreeRef}>
           <ProjectThree />
+        </section>
+
+        <section className='six' ref={contactMeRef}>
+          <ContactMe />
         </section>
       </div>
 

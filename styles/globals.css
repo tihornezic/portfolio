@@ -137,3 +137,8 @@ section {
 .buttonOrange:hover {
   background-color: #b96a42;
 }
+
+.formButton {
+  border: none;
+  float: right;
+}
