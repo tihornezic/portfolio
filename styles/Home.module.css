@@ -77,3 +77,27 @@
     width: 17px;
     height: 17px;
 }
+
+/* media queries */
+
+@media (max-width: 1730px) {
+    .imageWrapper img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .imageWrapper {
+        bottom: 5px;
+        right: 80px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .home {
+        align-items: center;
+    }
+    .imageWrapper {
+        display: none;
+    }
+}

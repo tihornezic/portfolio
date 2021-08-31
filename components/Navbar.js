@@ -11,8 +11,9 @@ const Navbar = ({homeIsVisible, aboutIsVisible, projectOneIsVisible, projectTwoI
     // console.log(router.asPath)
 
     return (
-        <div className='container'>
-            <nav className={navbarStyles.nav}>
+        // <div className='container'>
+        <div className={navbarStyles.navbarContainer}>
+            <nav className={`${navbarStyles.nav}`}>
                 <ul>
                     <li>
                         <Link href='#home'>
