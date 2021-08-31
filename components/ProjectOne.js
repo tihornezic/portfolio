@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 // import pokemonBattleGame from '../img/pokemonBattleGame.jpg'
-import pokemon from '../img/pokemon.png'
+import pokemonBattleGame from '../img/pokemonBattleGame.png'
 import react from '../img/react.svg'
 import sass from '../img/sass.svg'
 import contextapi from '../img/contextapi.svg'
@@ -78,7 +78,7 @@ const ProjectOne = () => {
 
                 <div className={projectOneStyles.right}>
                     <div className={projectOneStyles.image}>
-                        <Image src={pokemon} alt='Pokemon Battle Game' />
+                        <Image src={pokemonBattleGame} alt='Pokemon Battle Game' />
                     </div>
                 </div>
             </div>
