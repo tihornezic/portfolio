@@ -45,8 +45,8 @@ export default async (req, res) => {
         host: "smtp.gmail.com",
         auth: {
             user: 'tihorfrontenddev@gmail.com',
-            // pass: process.env.password,
-            pass: 'reactfrontend'
+            pass: process.env.password,
+            // pass: 'reactfrontend'
         },
         secure: true,
     })
