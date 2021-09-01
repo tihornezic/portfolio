@@ -107,7 +107,19 @@ export default function Index() {
         <meta name='keywords' content='' />
         <meta name='description' content='' />
         <meta charSet='utf-8' />
-        {/* <link rel='stylesheet' href='../font/stylesheet.css' type='text/css' charset='utf-8'></link> */}
+        {/* <link rel='stylesheet' href='/src/font/stylesheet.css' type='text/css' charset='utf-8'></link> */}
+        <link 
+          rel="preload"
+          href="/font/Nexa-Bold.otf"
+          as="font"
+          crossOrigin=""
+        />
+        <link 
+          rel="preload"
+          href="/font/Nexa-Light.otf"
+          as="font"
+          crossOrigin=""
+        />
         <title>Tihor Nezić - Frontend Web Dev</title>
       </Head>
 
