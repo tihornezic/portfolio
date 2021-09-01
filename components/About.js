@@ -33,7 +33,7 @@ const About = () => {
 
                 <p>To learn more about me, click on the button below to download my resume.</p>
 
-                <div className={aboutStyles.button}>
+                <div className={aboutStyles.button} passHref>
                     <Link href='#'>
                         <p className='button buttonPrimary' onClick={saveFile}>Download CV</p>
                     </Link>
@@ -61,7 +61,7 @@ const About = () => {
                 <p>To learn more about me, click on the button below to download my resume.</p>
 
                 <div className={aboutStyles.button}>
-                    <Link href='#'>
+                    <Link href='#' passHref>
                         <p className='button buttonPrimary' onClick={saveFile}>Download CV</p>
                     </Link>
                 </div>

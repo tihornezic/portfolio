@@ -14,7 +14,7 @@ const Navbar = ({homeIsVisible, aboutIsVisible, projectOneIsVisible, projectTwoI
             <nav className={`${navbarStyles.nav}`}>
                 <ul>
                     <li>
-                        <Link href='#home'>
+                        <Link href='#home' href>
                             <Image src={logo} alt='Tihor Nezić logo' className={navbarStyles.img} />
                         </Link>
                     </li>
@@ -45,7 +45,7 @@ const Navbar = ({homeIsVisible, aboutIsVisible, projectOneIsVisible, projectTwoI
 
             <div className={`${'container'} ${navbarStyles.responsiveNav}`}>
                 <div className={navbarStyles.responsiveLogo}>
-                    <Link href='#home'>
+                    <Link href='#home' href>
                         <Image src={logo} alt='Tihor Nezić logo' className={navbarStyles.img} />
                     </Link>
                 </div>

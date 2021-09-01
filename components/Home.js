@@ -24,7 +24,7 @@ const Home = () => {
                 <div className={homeStyles.headings}>
                     <h1>Hi, I am Tihor.</h1>
                     <h1>I am a <span>Frontend</span> Web Dev.</h1>
-                    <h2>"Don'&rsquo;t act, <span>React</span>!"</h2>
+                    <h2>&quot;Don&rsquo;t act, <span>React</span>!&quot;</h2>
 
                     <div className={homeStyles.buttonsRow}>
                         <Link href='#projectOne' passHref>
