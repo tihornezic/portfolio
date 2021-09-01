@@ -4,8 +4,7 @@ export default function contact(req, res) {
 
     if (req.method === 'POST') {
         const transporter = nodemailer.createTransport({
-            // port: 465,
-            port: 587,
+            port: 465,
             host: "smtp.gmail.com",
             auth: {
                 user: 'tihorfrontenddev@gmail.com',
