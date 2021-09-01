@@ -38,3 +38,10 @@
 .indicators div.projectThreeActive {
     background-color: var(--green);
 }
+
+/* media queries */
+@media (max-width: 650px) {
+    .indicators {
+        right: 5px;
+    }
+}

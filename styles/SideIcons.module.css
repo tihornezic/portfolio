@@ -46,3 +46,11 @@
 .sideIcon img {
     width: 26px;
 }
+
+/* media queries */
+
+@media (max-width: 1075px) {
+    .sideIcons {
+        display: none;
+    }
+}

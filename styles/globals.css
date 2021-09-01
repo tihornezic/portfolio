@@ -4,10 +4,13 @@
   --backgroundWhite: #FEFEFE;
   --darkGrey: #263238;
   --lightGrey: #C9C9C9;
+
   --blue: #2F6DB5;
   --mildGrey: #868492;
+
   --pink: #b460a8;
   --strongGrey: #263140;
+
   --green: #366961;
   --orange: #C57B57;
 }
@@ -34,6 +37,7 @@ body {
 }
 
 .fullWrapper {
+  position: relative;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
@@ -48,13 +52,21 @@ section {
   scroll-snap-align: start;
 }
 
-.one {
-  position: relative;
-}
-
 @media (max-width: 1500px) {
   .container {
     padding: 0 80px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 30px;
   }
 }
 
@@ -132,3 +144,7 @@ section {
   border: none;
   float: right;
 }
+
+/* .margin-sm {
+  margin-bottom: 20px;
+} */

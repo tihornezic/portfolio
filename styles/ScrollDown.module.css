@@ -34,9 +34,23 @@
         opacity: 1;
         top: 8px;
     }
-
     to {
         opacity: 0;
         top: 30px;
+    }
+}
+
+/* media queries */
+
+@media (max-width: 650px) {
+    /* .mouse {
+        width: 25px;
+        height: 40px;
+        border: 2px solid var(--grey);
+    } */
+
+    .scrollDownBox {
+        /* margin-top: -65px; */
+        display: none;
     }
 }

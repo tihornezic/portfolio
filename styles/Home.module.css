@@ -1,5 +1,6 @@
 .home {
     min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -71,6 +72,12 @@
     background-color: var(--darkGrey);
     cursor: pointer;
     margin-right: 13px;
+    transition: all 0.2s ease;
+}
+
+.socialButton:hover {
+    /* background-color: #36454e; */
+    background-color: #3f4f5a;
 }
 
 .cvButton {
@@ -86,9 +93,9 @@
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1630px) {
     .imageWrapper {
-        bottom: 5px;
+        bottom: 15px;
         right: 80px;
     }
 }
@@ -99,5 +106,84 @@
     }
     .imageWrapper {
         display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    .home h1 {
+        font-size: 3.15rem;
+    }
+    .home h2 {
+        font-size: 1.45rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .buttonsRow {
+        flex-direction: column;
+        align-items: flex-start;
+        /* width: fit-content; */
+        width: 100%;
+    }
+    .socialsButtonsRow {
+        margin-top: 25px;
+    }
+    .dash {
+        display: none;
+    }
+    .home h1 {
+        font-size: 2.85rem;
+    }
+    .home h2 {
+        font-size: 1.45rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .buttonsRow {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .socialsButtonsRow {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+    .home h1 {
+        font-size: 2.45rem;
+    }
+    .home h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-height: 710px) {
+    .home {
+        min-height: 120vh;
+        /* margin-top: 70px; */
+        padding-bottom: 55px;
+    }
+
+    .headings {
+        margin-top: 70px;
+    }
+}
+
+@media (max-height: 590px) {
+    .buttonsRow {
+        margin-top: 20px;
+    }
+
+    .socialsButtonsRow {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .home h1 {
+        max-width: 240px;
+        font-size: 2.25rem;
+    }
+    .home h2 {
+        font-size: 1.15rem;
     }
 }

@@ -133,11 +133,11 @@ export default function Index() {
           contactMeIsVisible={contactMeIsVisible}
         />
 
-        <SideIcons
+        {<SideIcons
           projectOneIsVisible={projectOneIsVisible}
           projectTwoIsVisible={projectTwoIsVisible}
           projectThreeIsVisible={projectThreeIsVisible}
-        />
+        />}
 
         {/* <h1 className='header'>{!homeIsVisible ? 'home not in viewport' : 'home in viewport'}</h1> */}
         {/* <h1 className='header2'>{!aboutIsVisible ? 'about not in viewport' : 'about in viewport'}</h1> */}

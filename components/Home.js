@@ -6,8 +6,17 @@ import github from '../img/github.svg'
 import mail from '../img/mail.svg'
 import cv from '../img/cv.svg'
 import homeStyles from '../styles/Home.module.css'
+import FileSaver from 'file-saver'
 
 const Home = () => {
+    const saveFile = () => {
+        FileSaver.saveAs(
+            "/resource/pdf.pdf",
+            // process.env.REACT_APP_CLIENT_URL + "/documents/pdf.pdf",
+            "CV-Tihor-Nezić.pdf"
+        )
+    }
+
     return (
         <div className='container'>
             <div id='home' className={homeStyles.home}>
@@ -18,31 +27,35 @@ const Home = () => {
                     <h2>"Don't act, <span>React</span>!"</h2>
 
                     <div className={homeStyles.buttonsRow}>
-                        <Link href='#'>
-                            <p className='button buttonPrimary'>View Projects</p>
+                        <Link href='#projectOne'>
+                            <p className='button buttonPrimary margin-sm'>View Projects</p>
                         </Link>
 
                         <div className={homeStyles.dash}></div>
 
                         <div className={homeStyles.socialsButtonsRow}>
                             <div>
-                                <Link href='#'>
-                                    <p className={homeStyles.socialButton}>
-                                        <Image src={linkedin} alt='linkedin' />
-                                    </p>
+                                <Link href='https://www.linkedin.com/in/tihor-nezi%C4%87-7666221a5/'>
+                                    <a target='_blank'>
+                                        <p className={homeStyles.socialButton}>
+                                            <Image src={linkedin} alt='linkedin' />
+                                        </p>
+                                    </a>
                                 </Link>
                             </div>
 
                             <div>
-                                <Link href='#'>
-                                    <p className={homeStyles.socialButton}>
-                                        <Image src={github} alt='github' width='21px' />
-                                    </p>
+                                <Link href='https://github.com/tihornezic'>
+                                    <a target='_blank'>
+                                        <p className={homeStyles.socialButton}>
+                                            <Image src={github} alt='github' width='21px' />
+                                        </p>
+                                    </a>
                                 </Link>
                             </div>
 
                             <div>
-                                <Link href='#'>
+                                <Link href='#contactMe'>
                                     <p className={homeStyles.socialButton}>
                                         <Image src={mail} alt='mail' width='23px' />
                                     </p>
@@ -50,11 +63,9 @@ const Home = () => {
                             </div>
 
                             <div>
-                                <Link href='#'>
-                                    <p className={homeStyles.socialButton}>
-                                        <Image src={cv} alt='cv' width='23px' />
-                                    </p>
-                                </Link>
+                                <p className={homeStyles.socialButton} onClick={saveFile}>
+                                    <Image src={cv} alt='cv' width='23px' />
+                                </p>
                             </div>
                         </div>
                     </div>
