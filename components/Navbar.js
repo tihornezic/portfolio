@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../img/logo.svg'
 import navbarStyles from '../styles/Navbar.module.css'
-import {useRouter} from 'next/router'
 import {useState} from 'react'
 
 const Navbar = ({homeIsVisible, aboutIsVisible, projectOneIsVisible, projectTwoIsVisible, projectThreeIsVisible, contactMeIsVisible}) => {

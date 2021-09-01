@@ -24,10 +24,10 @@ const Home = () => {
                 <div className={homeStyles.headings}>
                     <h1>Hi, I am Tihor.</h1>
                     <h1>I am a <span>Frontend</span> Web Dev.</h1>
-                    <h2>"Don't act, <span>React</span>!"</h2>
+                    <h2>"Don'&rsquo;t act, <span>React</span>!"</h2>
 
                     <div className={homeStyles.buttonsRow}>
-                        <Link href='#projectOne'>
+                        <Link href='#projectOne' passHref>
                             <p className='button buttonPrimary margin-sm'>View Projects</p>
                         </Link>
 
@@ -35,7 +35,7 @@ const Home = () => {
 
                         <div className={homeStyles.socialsButtonsRow}>
                             <div>
-                                <Link href='https://www.linkedin.com/in/tihor-nezi%C4%87-7666221a5/'>
+                                <Link href='https://www.linkedin.com/in/tihor-nezi%C4%87-7666221a5/' passHref>
                                     <a target='_blank'>
                                         <p className={homeStyles.socialButton}>
                                             <Image src={linkedin} alt='linkedin' />
@@ -45,7 +45,7 @@ const Home = () => {
                             </div>
 
                             <div>
-                                <Link href='https://github.com/tihornezic'>
+                                <Link href='https://github.com/tihornezic' passHref>
                                     <a target='_blank'>
                                         <p className={homeStyles.socialButton}>
                                             <Image src={github} alt='github' width='21px' />
@@ -55,7 +55,7 @@ const Home = () => {
                             </div>
 
                             <div>
-                                <Link href='#contactMe'>
+                                <Link href='#contactMe' passHref>
                                     <p className={homeStyles.socialButton}>
                                         <Image src={mail} alt='mail' width='23px' />
                                     </p>

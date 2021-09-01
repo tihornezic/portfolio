@@ -15,7 +15,7 @@ import projectThreeStyles from '../styles/ProjectThree.module.css'
 const ProjectThree = () => {
     return (
         <div id='projectThree' className={`${'container'} ${projectThreeStyles.projectThree}`}>
-            <h1>Mike's Pizza</h1>
+            <h1>Mike&rsquo;s Pizza</h1>
 
             <div className={projectThreeStyles.row}>
                 <div className={projectThreeStyles.left}>
