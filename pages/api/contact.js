@@ -7,7 +7,8 @@ export default function contact (req, res) {
         host: "smtp.gmail.com",
         auth: {
             user: 'tihorfrontenddev@gmail.com',
-            pass: process.env.password,
+            // pass: process.env.password,
+            pass: 'reactfrontend',
         },
         secure: true,
     })
