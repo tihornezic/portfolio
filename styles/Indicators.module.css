@@ -40,8 +40,25 @@
 }
 
 /* media queries */
+
 @media (max-width: 650px) {
     .indicators {
         right: 5px;
+    }
+}
+
+@media (max-width: 420px) {
+    .indicators {
+        right: -10px;
+    }
+
+    .indicators div {
+        width: 6px;
+        height: 6px;
+    }
+
+    .indicators div.active {
+        width: 15px;
+        height: 15px;
     }
 }
