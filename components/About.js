@@ -40,7 +40,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className={`${'container'} ${aboutStyles.responsiveWrapper}`}>
+           <div className={`${'container'} ${aboutStyles.responsiveWrapper}`}>
                 <h1>About</h1>
 
                 <p>Framework I use to turn ideas into real projects is <span>React.js</span>.</p>
@@ -66,7 +66,6 @@ const About = () => {
                     </Link>
                 </div>
             </div>
-
         </div>
     )
 }
