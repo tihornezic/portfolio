@@ -70,6 +70,12 @@ section {
   scroll-snap-align: start;
 }
 
+@media (max-width: 1540px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
 @media (max-width: 1500px) {
   .container {
     padding: 0 80px;

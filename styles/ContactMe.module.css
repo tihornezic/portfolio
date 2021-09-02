@@ -102,6 +102,14 @@
 
 /* media queries */
 
+@media (max-width: 1540px) {
+    .contactMe h1 {
+        font-size: 2.45rem;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+}
+
 @media (max-width: 1500px) {
     .contactMe h1 {
         font-size: 2.85rem;

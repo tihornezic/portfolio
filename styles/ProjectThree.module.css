@@ -28,7 +28,7 @@
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    width: 85%;
+    width: 90%;
     margin-right: 35px;
     /* margin-top: 75px; */
 }
@@ -100,6 +100,18 @@
     /* width: 800px; */
     width: 100%;
     border-radius: 10px;
+}
+
+/* media queries */
+@media (max-width: 1540px) {
+    .projectThree h1 {
+        font-size: 2.45rem;
+        margin-top: 65px;
+    }
+
+    .left p {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 1500px) {

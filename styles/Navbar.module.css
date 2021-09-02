@@ -183,6 +183,15 @@
 
 /* media queries */
 
+@media (max-width: 1540px) {
+    .navbarContainer {
+        max-width: 1280px;
+    }
+    .nav {
+        max-width: 1280px;
+    }
+}
+
 @media (max-width: 1500px) {
     .nav {
         padding: 40px 80px;
@@ -213,7 +222,6 @@
     .slideMenu ul {
         top: 60%;
     }
-
     .slideMenuOpen ul {
         top: 60%;
     }
@@ -223,7 +231,6 @@
     .slideMenu ul {
         top: 65%;
     }
-
     .slideMenuOpen ul {
         top: 65%;
     }

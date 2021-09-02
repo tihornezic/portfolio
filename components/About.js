@@ -35,7 +35,7 @@ const About = () => {
 
                 <div className={aboutStyles.button} passHref>
                     <Link href='#'>
-                        <p className='button buttonPrimary' onClick={saveFile}>Download CV</p>
+                        <span className='button buttonPrimary' onClick={saveFile}>Download CV</span>
                     </Link>
                 </div>
             </div>

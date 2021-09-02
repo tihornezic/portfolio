@@ -55,6 +55,15 @@
 }
 
 /* media queries */
+@media (max-width: 1540px) {
+    .about h1 {
+        font-size: 2.45rem;
+    }
+
+    .about .wrapper p {
+        font-size: 1.2rem;
+    }
+}
 
 @media (max-width: 1500px) {
     .about h1 {
