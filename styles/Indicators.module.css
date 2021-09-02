@@ -41,6 +41,12 @@
 
 /* media queries */
 
+@media (max-width: 780px) {
+    .indicators {
+        display: none;
+    }
+}
+
 @media (max-width: 650px) {
     .indicators {
         right: 5px;

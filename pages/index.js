@@ -100,6 +100,7 @@ export default function Index() {
     }
   }, [homeRef, aboutRef, projectOneRef, projectTwoRef, projectThreeRef, contactMeRef, options])
 
+
   return (
     <div>
       <Head>
@@ -108,13 +109,13 @@ export default function Index() {
         <meta name='description' content='Web developer specialized in React.' />
         <meta charSet='utf-8' />
         {/* <link rel='stylesheet' href='/src/font/stylesheet.css' type='text/css' charset='utf-8'></link> */}
-        <link 
+        <link
           rel="preload"
           href="/font/Nexa-Bold.otf"
           as="font"
           crossOrigin=""
         />
-        <link 
+        <link
           rel="preload"
           href="/font/Nexa-Light.otf"
           as="font"
@@ -179,6 +180,22 @@ export default function Index() {
           <ContactMe />
         </section>
       </div>
+
+      {/* <div className='responsiveContent'>
+        <Navbar />
+
+        <Home />
+
+        <About />
+
+        <ProjectOne />
+
+        <ProjectTwo />
+
+        <ProjectThree />
+
+        <ContactMe />
+      </div> */}
 
     </div>
   )

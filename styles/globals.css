@@ -22,13 +22,10 @@
   --backgroundWhite: #FEFEFE;
   --darkGrey: #263238;
   --lightGrey: #C9C9C9;
-
   --blue: #2F6DB5;
   --mildGrey: #868492;
-
   --pink: #b460a8;
   --strongGrey: #263140;
-
   --green: #366961;
   --orange: #C57B57;
 }
@@ -70,33 +67,14 @@ section {
   scroll-snap-align: start;
 }
 
-@media (max-width: 1540px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (max-width: 1500px) {
-  .container {
-    padding: 0 80px;
-  }
-}
-
-@media (max-width: 650px) {
-  .container {
-    padding: 0 60px;
-  }
-}
-
-@media (max-width: 500px) {
-  .container {
-    padding: 0 20px;
-  }
+.responsiveContent {
+  display: none;
 }
 
 .button {
   display: inline-block;
-  width: 180px;
+  /* width: 180px; */
+  min-width: 180px;
   height: 44px;
   text-align: center;
   color: var(--backgroundWhite);
@@ -169,6 +147,40 @@ section {
   float: right;
 }
 
-/* .margin-sm {
-  margin-bottom: 20px;
-} */
+@media (max-width: 1540px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 780px) {
+  .fullWrapper {
+    display: block;
+    scroll-snap-type: none;
+    height: fit-content;
+  }
+
+  section {
+    height: fit-content;
+    overflow-y: hidden;
+    scroll-snap-align: unset;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 20px;
+  }
+}

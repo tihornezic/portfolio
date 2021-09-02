@@ -7,6 +7,7 @@ import mail from '../img/mail.svg'
 import cv from '../img/cv.svg'
 import homeStyles from '../styles/Home.module.css'
 import FileSaver from 'file-saver'
+import {useEffect} from 'react'
 
 const Home = () => {
     const saveFile = () => {

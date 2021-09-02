@@ -42,13 +42,18 @@
 
 /* media queries */
 
+@media (max-width: 780px) {
+    .scrollDownBox {
+        display: none;
+    }
+}
+
 @media (max-width: 650px) {
     /* .mouse {
         width: 25px;
         height: 40px;
         border: 2px solid var(--grey);
     } */
-
     .scrollDownBox {
         /* margin-top: -65px; */
         display: none;
