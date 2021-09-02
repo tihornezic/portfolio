@@ -104,8 +104,8 @@ export default function Index() {
     <div>
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='keywords' content='' />
-        <meta name='description' content='' />
+        <meta name='keywords' content='tihor nezić, web developer, frontend, programmer' />
+        <meta name='description' content='Web developer specialized in React.' />
         <meta charSet='utf-8' />
         {/* <link rel='stylesheet' href='/src/font/stylesheet.css' type='text/css' charset='utf-8'></link> */}
         <link 
