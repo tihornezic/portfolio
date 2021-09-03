@@ -107,6 +107,7 @@ export default function Index() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='keywords' content='tihor nezić, web developer, frontend, programmer' />
         <meta name='description' content='Web developer specialized in React.' />
+        <meta property="og:image" content="/logo.svg" key="ogimage" />
         <meta charSet='utf-8' />
         <link
           rel="preload"
