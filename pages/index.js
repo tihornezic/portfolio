@@ -10,6 +10,7 @@ import ProjectTwo from '../components/ProjectTwo'
 import ProjectThree from '../components/ProjectThree'
 import ContactMe from '../components/ContactMe'
 import {useState, useEffect, useRef, useMemo} from 'react'
+import logo from '../img/logo.svg'
 
 export default function Index() {
 
@@ -122,7 +123,8 @@ export default function Index() {
           property="og:description"
           content="Make sure to check out my projects."
         />
-        <meta property="og:image" content="/logo.svg" />
+        {/* <meta property="og:image" content={"/logo.svg"} /> */}
+        <meta property="og:image" content={"https://tihor-nezic.vercel.app/logo.svg"} />
         {/*  */}
 
         <link
