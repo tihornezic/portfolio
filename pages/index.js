@@ -106,9 +106,25 @@ export default function Index() {
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='keywords' content='tihor nezić, web developer, frontend, programmer' />
-        <meta name='description' content='Web developer specialized in React.' />
-        <meta property="og:image" content="/logo.svg" key="ogimage" />
+        <meta name='description' content='Frontend Web developer specialized in React.' />
         <meta charSet='utf-8' />
+
+        {/* og tags */}
+        <meta property="og:url" content="https://tihor-nezic.vercel.app/" />
+        <meta property="og:type" content="website" />
+        {/* <meta property="fb:app_id" content="" /> */}
+        <meta
+          property="og:title"
+          content="Tihor Nezić - Frontend Web developer."
+        />
+        <meta name="twitter:card" content="Frontend Web developer specialized in React." />
+        <meta
+          property="og:description"
+          content="Make sure to check out my projects."
+        />
+        <meta property="og:image" content="/logo.svg" />
+        {/*  */}
+
         <link
           rel="preload"
           href="/font/Nexa-Bold.otf"
