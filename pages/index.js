@@ -112,8 +112,6 @@ export default function Index() {
 
         {/* og tags */}
         <meta property="og:url" content="https://tihor-nezic.vercel.app/" />
-        <meta property="og:type" content="website" />
-        {/* <meta property="fb:app_id" content="" /> */}
         <meta
           property="og:title"
           content="Tihor Nezić - Frontend Web developer."
