@@ -20,7 +20,6 @@ const ProjectOne = () => {
                     </p>
 
                     <p>
-                        {/* All Pokemons are fetched from the <a>pokeapi</a>. */}
                         All Pokemons are fetched from the&nbsp;
                         <Link href='https://pokeapi.co/docs/v2' >
                             <a target='_blank'>pokeapi</a>

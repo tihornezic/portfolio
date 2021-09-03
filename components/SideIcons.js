@@ -10,9 +10,9 @@ import FileSaver from 'file-saver'
 const SideIcons = ({projectOneIsVisible, projectTwoIsVisible, projectThreeIsVisible}) => {
     const saveFile = () => {
         FileSaver.saveAs(
-            "/resource/pdf.pdf",
+            "/resource/Tihor-Nezić-CV.pdf",
             // process.env.REACT_APP_CLIENT_URL + "/documents/pdf.pdf",
-            "CV-Tihor-Nezić.pdf"
+            "Tihor-Nezić-CV"
         )
     }
 
@@ -61,22 +61,15 @@ const SideIcons = ({projectOneIsVisible, projectTwoIsVisible, projectThreeIsVisi
                 </a>
             </Link>
 
-
-            {/* <a href={require("../path/to/file.pdf")} download="myFile">Download file</a> */}
-
             <div
+                onClick={saveFile}
                 className=
                 {projectOneIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectOne}` :
                     projectTwoIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectTwo}` :
                         projectThreeIsVisible ? `${sideIconsStyles.sideIcon} ${sideIconsStyles.projectThree}` :
                             sideIconsStyles.sideIcon}
             >
-                {/* <Link href={require('../public/pdf.pdf')} download='pdf'> */}
-                {/* <Link href='#' onClick={saveFile}> */}
-                {/* <button onClick={saveFile}> */}
-                <Image src={cv} alt='cv' onClick={saveFile} />
-                {/* </button> */}
-                {/* </Link> */}
+                <Image src={cv} alt='cv' />
             </div>
         </div >
     )

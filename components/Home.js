@@ -12,9 +12,9 @@ import {useEffect} from 'react'
 const Home = () => {
     const saveFile = () => {
         FileSaver.saveAs(
-            "/resource/pdf.pdf",
+            "/resource/Tihor-Nezić-CV.pdf",
             // process.env.REACT_APP_CLIENT_URL + "/documents/pdf.pdf",
-            "CV-Tihor-Nezić.pdf"
+            "Tihor-Nezić-CV"
         )
     }
 

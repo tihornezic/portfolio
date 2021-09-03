@@ -1,6 +1,5 @@
 @font-face {
   font-family: "Nexa";
-  /* src: url("/fonts/EBGaramond/EBGaramond-Regular.ttf"); */
   src: url("/font/Nexa-Bold.otf");
   font-style: bold;
   font-weight: 700;
@@ -9,7 +8,6 @@
 
 @font-face {
   font-family: "Nexa";
-  /* src: url("/fonts/EBGaramond/EBGaramond-Regular.ttf"); */
   src: url("/font/Nexa-Light.otf");
   font-style: light;
   font-weight: 300;
@@ -22,10 +20,13 @@
   --backgroundWhite: #FEFEFE;
   --darkGrey: #263238;
   --lightGrey: #C9C9C9;
+
   --blue: #2F6DB5;
   --mildGrey: #868492;
+
   --pink: #b460a8;
   --strongGrey: #263140;
+
   --green: #366961;
   --orange: #C57B57;
 }
@@ -63,17 +64,11 @@ body {
 section {
   height: 100vh;
   overflow-y: hidden;
-  /* width: 100%; */
   scroll-snap-align: start;
-}
-
-.responsiveContent {
-  display: none;
 }
 
 .button {
   display: inline-block;
-  /* width: 180px; */
   min-width: 180px;
   height: 44px;
   text-align: center;

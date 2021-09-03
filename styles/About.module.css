@@ -76,10 +76,7 @@
         display: none;
     }
     .responsiveWrapper {
-        /* overflow-y: auto; */
         display: block;
-        /* height: 100vh; */
-        /* margin-top: 20%; */
     }
 }
 
@@ -102,11 +99,6 @@
 }
 
 @media (max-width: 535px) {
-    /* .responsiveWrapper {
-        margin-top: 30%;
-        max-width: 500px;
-        padding: 0  50px;
-    } */
 
     .responsiveWrapper h1 {
         font-size: 2.75rem;
@@ -119,13 +111,8 @@
     }
 }
 
-/* @media (max-width: 450px) {
-
-} */
-
 @media (max-width: 375px) {
     .responsiveWrapper {
-        /* margin-top: 35%; */
         max-width: 500px;
         padding: 0 30px;
     }

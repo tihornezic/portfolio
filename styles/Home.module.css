@@ -76,7 +76,6 @@
 }
 
 .socialButton:hover {
-    /* background-color: #36454e; */
     background-color: #3f4f5a;
 }
 
@@ -128,34 +127,10 @@
     }
 }
 
-/* @media (max-height: 746px) {
-    .headings {
-        margin-top: 75px;
-    }
-}
-
-@media (max-height: 664px) {
-    .headings {
-        margin-top: 125px;
-    }
-} */
-
-/* @media (max-height: 710px) {
-    .home {
-        min-height: 120vh;
-        padding-bottom: 55px;
-    }
-    .headings {
-        margin-top: 70px;
-    }
-} */
-
 @media (max-width: 650px) {
     .buttonsRow {
         flex-direction: column;
-        /* align-items: flex-start; */
         align-items: center;
-        /* width: fit-content; */
         width: 100%;
     }
     .socialsButtonsRow {
@@ -189,22 +164,3 @@
         font-size: 1.25rem;
     }
 }
-
-/* @media (max-height: 590px) {
-    .buttonsRow {
-        margin-top: 20px;
-    }
-
-    .socialsButtonsRow {
-        margin-top: 15px;
-        margin-bottom: 30px;
-    }
-
-    .home h1 {
-        max-width: 240px;
-        font-size: 2.25rem;
-    }
-    .home h2 {
-        font-size: 1.15rem;
-    }
-} */

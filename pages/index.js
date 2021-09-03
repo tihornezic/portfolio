@@ -9,7 +9,7 @@ import ProjectOne from '../components/ProjectOne'
 import ProjectTwo from '../components/ProjectTwo'
 import ProjectThree from '../components/ProjectThree'
 import ContactMe from '../components/ContactMe'
-import {useState, useEffect, useCallback, useRef, useMemo} from 'react'
+import {useState, useEffect, useRef, useMemo} from 'react'
 
 export default function Index() {
 
@@ -108,7 +108,6 @@ export default function Index() {
         <meta name='keywords' content='tihor nezić, web developer, frontend, programmer' />
         <meta name='description' content='Web developer specialized in React.' />
         <meta charSet='utf-8' />
-        {/* <link rel='stylesheet' href='/src/font/stylesheet.css' type='text/css' charset='utf-8'></link> */}
         <link
           rel="preload"
           href="/font/Nexa-Bold.otf"
@@ -123,9 +122,6 @@ export default function Index() {
         />
         <title>Tihor Nezić - Frontend Web Dev</title>
       </Head>
-
-      {/* <Navbar /> */}
-      {/* <Home /> */}
 
       <div className='fullWrapper'>
         <Navbar
@@ -152,9 +148,6 @@ export default function Index() {
           projectThreeIsVisible={projectThreeIsVisible}
         />}
 
-        {/* <h1 className='header'>{!homeIsVisible ? 'home not in viewport' : 'home in viewport'}</h1> */}
-        {/* <h1 className='header2'>{!aboutIsVisible ? 'about not in viewport' : 'about in viewport'}</h1> */}
-
         <section className='one' ref={homeRef}>
           <Home />
           <ScrollDown />
@@ -180,22 +173,6 @@ export default function Index() {
           <ContactMe />
         </section>
       </div>
-
-      {/* <div className='responsiveContent'>
-        <Navbar />
-
-        <Home />
-
-        <About />
-
-        <ProjectOne />
-
-        <ProjectTwo />
-
-        <ProjectThree />
-
-        <ContactMe />
-      </div> */}
 
     </div>
   )
