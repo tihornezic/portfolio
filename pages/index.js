@@ -124,6 +124,8 @@ export default function Index() {
           content="Make sure to check out my projects."
         />
         <meta property="og:image" content={"https://tihor-nezic.vercel.app/logo.png"} />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
         {/*  */}
 
         <link
