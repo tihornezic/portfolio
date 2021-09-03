@@ -123,7 +123,6 @@ export default function Index() {
           property="og:description"
           content="Make sure to check out my projects."
         />
-        {/* <meta property="og:image" content={"/logo.svg"} /> */}
         <meta property="og:image" content={"https://tihor-nezic.vercel.app/logo.png"} />
         {/*  */}
 
